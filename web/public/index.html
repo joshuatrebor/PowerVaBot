@@ -146,13 +146,13 @@
           const { type } = action;
           if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
             dispatch({
-              type: 'WEB_CHAT/SEND_EVENT',
+              type: 'WEB_CHAT/SEND_EVENT', 
               payload: {
                 name: 'startConversation',
                 type: 'event',
                 value: {text: "hello"}
               }
-            });
+            })
           }
           return next(action);
         });
